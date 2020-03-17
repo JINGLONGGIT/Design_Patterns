@@ -1,15 +1,15 @@
-#include "global.h"
+ï»¿#include "global.h"
 
 class Singleton{
 private:
     static Singleton* m_instance;
     Singleton(){
-        cout << "ÔËÐÐ¹¹Ôìº¯Êý" << endl;
-        cout << "²úÉúÒ»¸öÃÀ¹ú×ÜÍ³" << endl;
+        cout << "è¿è¡Œæž„é€ å‡½æ•°" << endl;
+        cout << "äº§ç”Ÿä¸€ä¸ªç¾Žå›½æ€»ç»Ÿ" << endl;
     }
 
     ~Singleton(){
-        cout << "ÔËÐÐÎö¹¹º¯Êý" << endl;
+        cout << "è¿è¡Œæžæž„å‡½æ•°" << endl;
     }
 
 public:

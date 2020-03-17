@@ -1,20 +1,20 @@
-#include "µ¥¼şÄ£Ê½.h"
+ï»¿#include "å•ä»¶æ¨¡å¼.h"
 
 Singleton* Singleton::m_instance = NULL;
 
-// Ïß³Ì·Ç°²È«°æ±¾£¬ÇÒ³ÌĞòÍË³öºóÎŞ·¨ÔËĞĞÎö¹¹º¯Êı
+// çº¿ç¨‹éå®‰å…¨ç‰ˆæœ¬ï¼Œä¸”ç¨‹åºé€€å‡ºåæ— æ³•è¿è¡Œææ„å‡½æ•°
 Singleton* Singleton::getInstance()
 {
     if (m_instance == NULL)
         m_instance = new Singleton();
     else
-        cout << "ÒÑ¾­²úÉúÁËÒ»¸öÃÀ¹ú×ÜÍ³" << endl;
+        cout << "å·²ç»äº§ç”Ÿäº†ä¸€ä¸ªç¾å›½æ€»ç»Ÿ" << endl;
     
     return m_instance;
 }
 
 /*
-// Ïß³Ì°²È«°æ±¾£¬µ«ËøµÄ´ú¼ÛºÜ¸ß
+// çº¿ç¨‹å®‰å…¨ç‰ˆæœ¬ï¼Œä½†é”çš„ä»£ä»·å¾ˆé«˜
 Singleton* Singleton::getInstance()
 {
     Lock lock;
@@ -23,7 +23,7 @@ Singleton* Singleton::getInstance()
     return m_instance;
 }
 
-// Ë«¼ì²éËø: ÄÚ´æ¶ÁĞ´reorder²»°²È«(ÓÉÓÚCPUÂÒĞòÖ´ĞĞ£¬¿ÉÄÜµ¼ÖÂ·ÃÎÊµ½Î´¾­³õÊ¼»¯µÄ¶ÔÏóµÄÒıÓÃ)
+// åŒæ£€æŸ¥é”: å†…å­˜è¯»å†™reorderä¸å®‰å…¨(ç”±äºCPUä¹±åºæ‰§è¡Œï¼Œå¯èƒ½å¯¼è‡´è®¿é—®åˆ°æœªç»åˆå§‹åŒ–çš„å¯¹è±¡çš„å¼•ç”¨)
 Singleton* Singleton::getInstance()
 {
     if (m_instance == NULL)
@@ -42,7 +42,7 @@ void SingletonTest::main()
     Singleton* president2 = Singleton::getInstance();
 
     if (president1 == president2)
-        cout << "ËûÃÇÊÇÍ¬Ò»¸öÈË" << endl;
+        cout << "ä»–ä»¬æ˜¯åŒä¸€ä¸ªäºº" << endl;
     else 
-        cout << "ËûÃÇ²»ÊÇÍ¬Ò»¸öÈË" << endl;
+        cout << "ä»–ä»¬ä¸æ˜¯åŒä¸€ä¸ªäºº" << endl;
 }

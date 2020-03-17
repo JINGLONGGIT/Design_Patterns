@@ -1,69 +1,69 @@
-#include "global.h"
-#include "²ßÂÔÄ£Ê½.h"
-#include "Ä£°å·½·¨Ä£Ê½.h"
-#include "¹¤³§·½·¨Ä£Ê½.h"
-#include "ÃüÁîÄ£Ê½.h"
-#include "¹Û²ìÕßÄ£Ê½.h"
-#include "×°ÊÎÕßÄ£Ê½.h"
-#include "µ¥¼şÄ£Ê½.h"
-#include "ÊÊÅäÆ÷Ä£Ê½.h"
-#include "Íâ¹ÛÄ£Ê½.h"
-#include "µü´úÆ÷Ä£Ê½.h"
-#include "×éºÏÄ£Ê½.h"
-#include "×´Ì¬Ä£Ê½.h"
-#include "³éÏó¹¤³§Ä£Ê½.h"
+ï»¿#include "global.h"
+#include "ç­–ç•¥æ¨¡å¼.h"
+#include "æ¨¡æ¿æ–¹æ³•æ¨¡å¼.h"
+#include "å·¥å‚æ–¹æ³•æ¨¡å¼.h"
+#include "å‘½ä»¤æ¨¡å¼.h"
+#include "è§‚å¯Ÿè€…æ¨¡å¼.h"
+#include "è£…é¥°è€…æ¨¡å¼.h"
+#include "å•ä»¶æ¨¡å¼.h"
+#include "é€‚é…å™¨æ¨¡å¼.h"
+#include "å¤–è§‚æ¨¡å¼.h"
+#include "è¿­ä»£å™¨æ¨¡å¼.h"
+#include "ç»„åˆæ¨¡å¼.h"
+#include "çŠ¶æ€æ¨¡å¼.h"
+#include "æŠ½è±¡å·¥å‚æ¨¡å¼.h"
 
 void main()
 {
-    // ²ßÂÔÄ£Ê½
+    // ç­–ç•¥æ¨¡å¼
     //MiniDuckSimulator *duck = new MiniDuckSimulator();
     //duck->main();
     
-    // Ä£°å·½Ê½Ä£Ê½
+    // æ¨¡æ¿æ–¹å¼æ¨¡å¼
     //BeverageTestDrive *drink = new BeverageTestDrive();
     //drink->main();
     
-    // ¹¤³§·½·¨Ä£Ê½
+    // å·¥å‚æ–¹æ³•æ¨¡å¼
     //PizzaTestDrive* pizza = new PizzaTestDrive();
     //pizza->main();
 
-    // ÃüÁîÄ£Ê½
+    // å‘½ä»¤æ¨¡å¼
     //RemoteControlTest* control = new RemoteControlTest();
     //control->main();
 
-    // ¹Û²ìÕßÄ£Ê½
+    // è§‚å¯Ÿè€…æ¨¡å¼
     //ObserverPattern* obsPattern = new ObserverPattern();
     //obsPattern->main();
     
-    // ×°ÊÎÕßÄ£Ê½
+    // è£…é¥°è€…æ¨¡å¼
     //DecoratorPatternTest* decorator = new DecoratorPatternTest();
     //decorator->main();
 
-    // µ¥¼şÄ£Ê½
+    // å•ä»¶æ¨¡å¼
     //SingletonTest* singleton = new SingletonTest();
     //singleton->main();
     
-    // ÊÊÅäÆ÷Ä£Ê½
+    // é€‚é…å™¨æ¨¡å¼
     //DuckAdapterTest* adapter = new DuckAdapterTest();
     //adapter->main();
     
-    // Íâ¹ÛÄ£Ê½
+    // å¤–è§‚æ¨¡å¼
     //FacadePattern* facade = new FacadePattern();
     //facade->main();
 
-    // µü´úÆ÷Ä£Ê½
+    // è¿­ä»£å™¨æ¨¡å¼
     //MenuTestDrive* iteratorTest = new MenuTestDrive();
     //iteratorTest->main();
 
-    // ×éºÏÄ£Ê½
+    // ç»„åˆæ¨¡å¼
     //CompositePatternTest* compositeTest = new CompositePatternTest();
     //compositeTest->main();
 
-    // ×´Ì¬Ä£Ê½
+    // çŠ¶æ€æ¨¡å¼
     //StatePatternTest* statePattern = new StatePatternTest();
     //statePattern->main();
 
-    // ³éÏó¹¤³§Ä£Ê½
+    // æŠ½è±¡å·¥å‚æ¨¡å¼
     //AbstractFactoryPattern* afPattern = new AbstractFactoryPattern();
     //afPattern->main();
     system("pause");
