@@ -1,4 +1,4 @@
-﻿#include "״̬ģʽ.h"
+﻿#include "状态模式.h"
 
 void StatePatternTest::main()
 {
