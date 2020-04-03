@@ -13,7 +13,8 @@ private:
     }
 
 public:
-    static Singleton* getInstance();
+//    static Singleton* getInstance();
+    static Singleton& getInstance();
 };
 
 class SingletonTest{

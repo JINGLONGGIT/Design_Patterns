@@ -2,6 +2,7 @@
 
 Singleton* Singleton::m_instance = NULL;
 
+/*
 // 线程非安全版本，且程序退出后无法运行析构函数
 Singleton* Singleton::getInstance()
 {
@@ -12,6 +13,7 @@ Singleton* Singleton::getInstance()
     
     return m_instance;
 }
+*/
 
 /*
 // 线程安全版本，但锁的代价很高
@@ -36,11 +38,21 @@ Singleton* Singleton::getInstance()
 }
 */
 
+// 使用局部静态对象重写单例模式
+Singleton& Singleton::getInstance()
+{
+    static Singleton m_instance;
+    return m_instance;
+}
+
 void SingletonTest::main()
 {
-    Singleton* president1 = Singleton::getInstance();
-    Singleton* president2 = Singleton::getInstance();
-
+//    Singleton* president1 = Singleton::getInstance();
+//    Singleton* president2 = Singleton::getInstance();
+    
+    Singleton* president1 = &Singleton::getInstance();
+    Singleton* president2 = &Singleton::getInstance();
+    
     if (president1 == president2)
         cout << "他们是同一个人" << endl;
     else 
