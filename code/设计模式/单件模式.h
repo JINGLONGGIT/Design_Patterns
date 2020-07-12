@@ -14,7 +14,7 @@ private:
 
 public:
 //    static Singleton* getInstance();
-    static Singleton& getInstance();
+    static Singleton& getInstance();        // 静态公有函数：用于获取静态私有实例static Singleton* m_instance
 };
 
 class SingletonTest{

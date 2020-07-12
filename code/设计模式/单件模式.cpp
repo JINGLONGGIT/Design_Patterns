@@ -17,10 +17,11 @@ Singleton* Singleton::getInstance()
 
 /*
 // 线程安全版本，但锁的代价很高
+// 程序异常会导致死锁
 Singleton* Singleton::getInstance()
 {
     Lock lock;
-    if (m_instance == NULL)
+    if (m_instance == NULL) // 如果此处程序异常，则会导致死锁
         m_instance = new Singleton();
     return m_instance;
 }
